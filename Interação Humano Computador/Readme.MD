@@ -1,4 +1,4 @@
 # Interação Humano Computador
-Matéria
+Matéria teórica que engloba a parte front-end das aplicações (cores, fontes) se resumindo em UX/UI.
 
-## XX/02/2024 - XXXX
+## 08/02/2024 - XXXX
