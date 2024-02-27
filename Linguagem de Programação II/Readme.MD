@@ -28,3 +28,8 @@ Além disso, ele implementa três ferramentas importantes, sendo elas:
 Exemplo de HTTP: 
 http(sendo o protrocolo, caso for com 's' é porque o site tem o certificado SSL)://www.idosystems.com.br(sendo o nome da maquina)/site(sendo as pastas e subpastas)/index.html(sendo o arquivo)
 ```
+
+## 26/02/2024 - Primeiro Projeto em HTML
+Possível visualizar em ```utils/projeto-1/index.html```
+
+
