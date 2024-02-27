@@ -52,6 +52,9 @@ Um departamento é uma entidade que contém inúmeras descrições, isso traduz 
 Um banco de dados segue a seguinte estrutura:
 MC -> Modelo Conceitual(define o mundo real) -> Modelo Lógico(define o modelo de dados) -> Modelo Físico(DDL) -> Banco de Dados
 
-## 22/02/2024 - 
+## 22/02/2024 - Cardinalidade
 O que é Cardinalidade?
 R: É o número de vezes que um item se comunica com outro item, exemplo: 1 único funcionário pode-se comunicar com 1 departamento porém 1 departamento pode-se comunicar com vários funcionários.
+
+## 27/02/2024 - Criação do Primeiro Banco de Dados
+Nessa aula fizemos a criação do primeiro banco de dados, visualizar em ```/utils/primeiro-banco```
