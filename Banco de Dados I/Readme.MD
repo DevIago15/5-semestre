@@ -66,8 +66,11 @@ Para saber a herança tem que fazer uma pergunta: É um(a)?
 
 == Entidades:
 Pedidos: Data, Valor e Status
+
 Clientes: Nome, CPF, Status, Venda e Credito
+
 Vendedor: Nome, CPF, Status, Salario
+
 Produtos: Descrição, Valor, Estoque e Status
 
 Visualizar projeto em ```utils/exercicio-1```
