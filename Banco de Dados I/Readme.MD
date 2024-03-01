@@ -62,7 +62,7 @@ Nessa aula fizemos a criação do primeiro banco de dados, visualizar em ```/uti
 ## 29/02/2024 - Exercício de Herança
 Para saber a herança tem que fazer uma pergunta: É um(a)?
 
-![Exercício](incluir_url)
+![Exercício](https://github.com/DevIago15/5-semestre/blob/main/Banco%20de%20Dados%20I/utils/img/exercicio-1.jpeg)
 
 == Entidades:
 Pedidos: Data, Valor e Status
