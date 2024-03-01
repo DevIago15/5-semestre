@@ -58,3 +58,16 @@ R: É o número de vezes que um item se comunica com outro item, exemplo: 1 úni
 
 ## 27/02/2024 - Criação do Primeiro Banco de Dados
 Nessa aula fizemos a criação do primeiro banco de dados, visualizar em ```/utils/primeiro-banco```
+
+## 29/02/2024 - Exercício de Herança
+Para saber a herança tem que fazer uma pergunta: É um(a)?
+
+![Exercício](incluir_url)
+
+== Entidades:
+Pedidos: Data, Valor e Status
+Clientes: Nome, CPF, Status, Venda e Credito
+Vendedor: Nome, CPF, Status, Salario
+Produtos: Descrição, Valor, Estoque e Status
+
+Visualizar projeto em ```utils/exercicio-1```
