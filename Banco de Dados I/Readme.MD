@@ -59,7 +59,7 @@ R: É o número de vezes que um item se comunica com outro item, exemplo: 1 úni
 ## 27/02/2024 - Criação do Primeiro Banco de Dados
 Nessa aula fizemos a criação do primeiro banco de dados, visualizar em ```/utils/primeiro-banco```
 
-## 29/02/2024 - Exercício de Herança
+## 29/02 - 05/03/2024 | Exercício de Herança
 Para saber a herança tem que fazer uma pergunta: É um(a)?
 
 ![Exercício](https://github.com/DevIago15/5-semestre/blob/main/Banco%20de%20Dados%20I/utils/img/exercicio-1.jpeg)
@@ -73,4 +73,19 @@ Vendedor: Nome, CPF, Status, Salario
 
 Produtos: Descrição, Valor, Estoque e Status
 
-Visualizar projeto em ```utils/exercicio-1```
+Finalizando o projeto visto em sala de aula
+
+Visualizar projeto DB em ```utils/exercicio-1```
+
+Quais são as restrições de banco de dados?
+- **UNIQUE CONSTRAINT:** restrição de valor único (não vai ter 2 cpfs iguais)
+- **PRIMARY KEY:** garante que cada linha em uma tabela seja única, identificando exclusivamente cada registro.
+- **FOREIGN KEY:** estabelece uma relação entre duas tabelas, garantindo que os valores em uma coluna correspondam aos valores de outra tabela.
+- **CHECK CONSTRAINT:** define uma condição que os valores em uma coluna devem satisfazer, usada para garantir que os dados atendam conjunto específico de critéorios.
+- **NOT NULL CONSTRAINT:** impede que os valores em uma coluna sejam nulos.
+- **DEFAULT CONSTRAINT:** define um valor padrão para uma coluna caso nenhum valor seja especificado durante a inserção de dados.
+- **INDEX CONSTRAINT:** cria índices em colunas específicas para acelerar a recuperação de dados.
+
+## XX/03/2023 | Exemplificação Trabalho 
+O trabalho pode ser visto em ```/utils/docx/```
+
