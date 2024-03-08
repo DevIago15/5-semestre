@@ -86,6 +86,18 @@ Quais são as restrições de banco de dados?
 - **DEFAULT CONSTRAINT:** define um valor padrão para uma coluna caso nenhum valor seja especificado durante a inserção de dados.
 - **INDEX CONSTRAINT:** cria índices em colunas específicas para acelerar a recuperação de dados.
 
-## XX/03/2023 | Exemplificação Trabalho 
-O trabalho pode ser visto em ```/utils/docx/```
+## 07/03/2023 | Aula com Arquivo Disponível no Aluno Online
+Possível visualizar o arquivo em ````/utils/Vendas_CCO```
+
+O que é uma procedure?
+R: Procedure é um procedimento armazenado no banco que serve para otimizar tempo, exemplo procedure de create, update, delete, etc...
+
+O que são parâmetros?
+R: São variáveis locais no qual o valor vem de fora.
+
+Como diferenciar @ e @@?
+R: Somente @ significa que é uma variável do usuário alimentada pelo menos, enquanto @@ significa uma variável alimentada pelo SQL.
+
+O seguinte insert pega a última chave primária gerada pelo SQL e da um insert na tabela de clientes a partir dessa chave: 
+```	INSERT INTO clientes values (@@IDENTITY, @renda, @renda*0.25)```
 
