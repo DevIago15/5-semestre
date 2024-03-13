@@ -101,3 +101,10 @@ R: Somente @ significa que é uma variável do usuário alimentada pelo menos, e
 O seguinte insert pega a última chave primária gerada pelo SQL e da um insert na tabela de clientes a partir dessa chave: 
 ```	INSERT INTO clientes values (@@IDENTITY, @renda, @renda*0.25)```
 
+## 12/03/2024 | Trabalho
+
+Exercício proposto:
+![Exercício](/Banco%20de%20Dados%20I/utils/img/exercicio-2.jpeg)
+
+Rascunho do trabalho:
+![Rascunho](/Banco%20de%20Dados%20I/utils/img/rascunho.jpeg)

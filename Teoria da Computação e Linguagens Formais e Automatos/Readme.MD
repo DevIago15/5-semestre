@@ -151,3 +151,90 @@ Exemplo 2:
 <condicao> -> C := 0 | D := 1 | A :=3 | A:= 4
 G = if C = 0 then if D = 1 A := 3 else A := 4
 
+## 08/03/2024 | Tipos de Gramáticas
+A classificação das linguagens, conhecida como hierarquia de Chomsky, tem como principal mérito agrupar as linguagens em classes, de modo a antecipar as propriedades por uma linguagem e viabilizar a escolha mais econômica para representar determinada linguagem, evitando o uso de formalismos mais complexos que o necessário ou então insuficientes. Permite selecionar o modelo de implementação de menor custo para cada linguagem.
+
+A hierarquia de Chomsky define 4 classes distintas de linguagens:
+    - Gramática Inestrita (tipo Ø)
+    G = {2, N, S, P} em que P t em a forma u -> v
+    uE(ΣUN)* vE(ΣUN)*
+    Exemplo: G com Σ = {a, c, d}
+                   N = {S, X, Y}
+                   S = {S}
+             P: 1 - S -> aXYc
+                2 - aX -> cad
+                3 - Xc -> aXa
+                4 - XYc -> Xcc
+                5 - Yc ->   ℷ
+G1 = cad => S 1=> aXYc 2=> cadYc 5=> cad
+G2 = acadac => S 1=> aXYc 1=> aXcc 3=> aXac 2=> acadac
+
+    - Gramática Sensível ao Contexto
+    (Tipo 1)
+            Produção da forma:
+            αAβ -> αGβ
+             u  -> v
+    com | v | >= | u |
+    Exemplo: G com = { a, b, c}, N = {S, X, Y}
+    S = {S} e P:
+    1 - S -> aXb
+    2 - S -> aXa
+    3 - Xa -> bc
+    4 - Xb -> cb
+    G = ?  
+
+    - Gramática Livre de Contexto
+    (Tipo 2)
+    As produções são todas da forma: u -> v   
+                             1 único    vE (ZUN)*
+                             não terminal   
+    Exemplo: G com Σ = {0, 1}, N = {S}, S ={S} e P:
+                                S -> 0S1
+                                S -> ℷ
+
+    - Gramática Regular (Tipo 3)
+    As produções são da forma:
+        u -> v
+    1 único não terminal, regular à direita
+
+    V pode ser { ℷ
+                 ΣN
+                 N
+                 Σ
+               }
+    Exemplo: Σ = {0, 1, 2, 3}, N = {S, A}, S={S} e P:
+                1. S -> 0S
+                2. S -> 15
+                3. S -> A
+                4. A -> 2
+                5. A -> 3
+                G = ?
+
+    regular à esquerda
+    V pode ser { ℷ
+                 ΣN
+                 N
+                 Σ
+               }
+
+    Exemplo: 1. S -> S2
+             2. S -> S3
+             3. S -> A
+             4. A -> 1
+             5. A -> 0
+
+    Hierarquia de Chamsky:
+    - Toda G do tipo 3 é também do tipo 2
+    - Nem toda G do tipo 2 é do tipo 1. São do tipo 1 apenas aquelas que não possuem produção u-> v, com v = ℷ
+    - Toda G do tipo 1 é também do tipo Ø
+    => Classificar pela G mais simples
+    A seleção do tipo de G implica.
+    a) propriedades exibidas pela 1(G)
+    b) características estruturais da L(G)
+
+    Estruturalmente:
+    - L livros de contexto = distinguem-se das L regulares por exibirem características de aninhamento => blocos de comandos, expressões matemáticas.
+    - L sensíveis ao contexto = distinguem-se das livres de contexto por conterem sentenças (construções, cjtos de símbolos) cuja validade é vinculada à presença de seu contexto.
+    - L irrestritas = distinguem-se das LSC por conseguirem demonstrar a indecisidibilidade de um problema genérico.
+
+
