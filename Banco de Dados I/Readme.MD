@@ -108,3 +108,8 @@ Exercício proposto:
 
 Rascunho do trabalho:
 ![Rascunho](/Banco%20de%20Dados%20I/utils/img/rascunho.jpeg)
+
+## 14/03/2024 - 21/03/2024
+Trabalho de banco de especialidades
+
+Possível visualizar em ```/utils/locacao_cco```

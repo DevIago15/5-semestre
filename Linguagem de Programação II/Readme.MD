@@ -32,4 +32,12 @@ http(sendo o protrocolo, caso for com 's' é porque o site tem o certificado SSL
 ## 26/02/2024 - Primeiro Projeto em HTML
 Possível visualizar em ```utils/projeto-1/index.html```
 
+## 25/03/2024 - Primeiro Projeto utilizando Bootstrap
+Possível visualizar em ```utils/projeto-3/index.html```
+
+Porque estamos utilizando o bootstrap online e não instalavel?
+R: Otimiza espaço no servidor onde a aplicação está instalada.
+
+![Breakpoints de responsividade](./utils/img/image.png)
+
 

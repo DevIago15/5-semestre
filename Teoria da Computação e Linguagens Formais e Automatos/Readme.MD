@@ -237,4 +237,6 @@ G2 = acadac => S 1=> aXYc 1=> aXcc 3=> aXac 2=> acadac
     - L sensíveis ao contexto = distinguem-se das livres de contexto por conterem sentenças (construções, cjtos de símbolos) cuja validade é vinculada à presença de seu contexto.
     - L irrestritas = distinguem-se das LSC por conseguirem demonstrar a indecisidibilidade de um problema genérico.
 
+## 22/03/2024 - Exercícios de Gramáticas
+
 
