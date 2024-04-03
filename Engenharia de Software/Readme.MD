@@ -22,3 +22,33 @@ Possível visualizar em ```/utils/ES 8```
 
 Trabalho:
 Pesquisar e preparar uma apresentação dos 14 diagramas de classes existentes.
+
+## 27/03/2024
+**Perguntas de Prova:**
+```Visualizar PDF Aula 1 e 2```
+
+O que são requisitos?
+R: Depende da visão, porém em resumo é aquilo que o sistema deve atender as expectativas (aquilo que o sistema deve fazer).
+
+O que é requisito do usuário?
+R: A necessidades que o usuario tem referente ao sistema (o que o sistema tem que ter na visao dele)
+
+O que são requisitos funcionais?
+R: são serviços ou funcionalidades esperados para um sistema 
+
+O que é engenharia de software?
+R: Engenharia de software é um conjunto de ferramentas, métodos e processos que garantem ao cliente e ao gerente a entrega final de um software com qualidade.
+    - Métodos: são os conjuntos de tarefas, ou seja, métodos que serão feitos para dar andamento ao processo (cada método tem sua entrega).
+    - Processos: é a sequência(procedimento) em que os métodos serão efetuados.
+    - Ferramentas: São cases, ou seja, ferramentas utilizadas pela análise para desenvolver o alinhar o requisito com o programador.
+
+O que é crise de software?
+R: A crise de softwares são a base de:
+    - Estimativas de prazos e custos
+    - Produtividade de pessoas
+    - Qualidade de software
+    - Software dificil de manter
+
+Um bom software tem que ter tudo isso de forma perfeito.
+
+

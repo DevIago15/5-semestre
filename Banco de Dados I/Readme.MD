@@ -113,3 +113,8 @@ Rascunho do trabalho:
 Trabalho de banco de especialidades
 
 Possível visualizar em ```/utils/locacao_cco```
+
+## 26/03/2024 
+se o item for primária e estrangeira (filha de alguém)
+
+composta -M mais de uma coluna entra na chave

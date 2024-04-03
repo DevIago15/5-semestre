@@ -40,4 +40,12 @@ R: Otimiza espaço no servidor onde a aplicação está instalada.
 
 ![Breakpoints de responsividade](./utils/img/image.png)
 
+## 01/04/2024 - Trabalho
+Será necessário fazer:
+3 paginas em html
+    1. pagina de apresentação (index.html)
+    2. pagina sobre a materia (especificar como funciona html, css e js e bootstrap)
+    3. pagina de formulario (validar com js, validar campos em branco ou campos errados, minimo 5 pontos)
+
+usar navbar do bootstrap*
 
