@@ -7,11 +7,14 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
 
   <title>Formulário</title>
 </head>
 
 <!-- MENU NAVBAR -->
+
 <body class="bg-dark">
   <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
@@ -53,7 +56,8 @@
 
         <div class="mt-2">
           <label for="exampleCPF" class="form-label text-light">CPF</label>
-          <input type="number" class="form-control" id="exampleCPF">   <!-- fazer verificacao para permitir somente numeros -->
+          <input type="number" class="form-control" id="exampleCPF">
+          <!-- fazer verificacao para permitir somente numeros -->
         </div>
 
         <div class="mt-2">
@@ -73,32 +77,60 @@
 
         <div class="mt-2">
           <label for="examplePhone" class="form-label text-light">Telefone</label>
-          <input type="number" class="form-control" id="examplePhone"> <!-- fazer verificacao para permitir somente numeros -->
+          <input type="number" class="form-control" id="examplePhone">
+          <!-- fazer verificacao para permitir somente numeros -->
         </div>
 
         <div class="mt-2">
           <label for="exampleOBS" class="form-label text-light">Observações</label>
-          <input type="text" class="form-control" id="exampleOBS"> <!-- fazer verificacao para permitir somente numeros -->
+          <input type="text" class="form-control" id="exampleOBS">
+          <!-- fazer verificacao para permitir somente numeros -->
         </div>
 
         <div class="mt-3">
           <button type="button" class="btn btn-success" onclick="verificacao()">Enviar Formulário</button>
         </div>
-        <div class="alert alert-success mt-3" role="alert" id="alertaSucesso" style="display: none;">
-          <h4 class="alert-heading">Sucesso!</h4>
-          <p>Seu formulário foi enviado com sucesso!</p>
-          <hr>
-          <p class="mb-0">Aguarde nosso retorno para darmos prosseguimento no assunto em questão. <br> Em alguns segundos sua página será redirecionada para a Home.</p>
-        </div>
-        <div class="alert alert-danger mt-3" role="alert" id="alertaDanger" style="display: none;">
-          <h4 class="alert-heading">Ops!</h4>
-          <p>Alguns campos do seu formulário não foram preenchidos corretamente!</p>
-          <hr>
-          <p class="mb-0">Sugerimos preenche-los novamente para darmos prosseguimento no atendimento.</p>
-        </div>
-      </form>
 
-      <!-- IMAGEM ILUSTRATIVA -->
+        <!-- Seu modal Danger HTML -->
+        <div class="modal modal-backdrop" tabindex="-1" id="modalDanger">
+          <div class="modal-dialog" style="color: red">
+            <div class="modal-content" style="color: red">
+              <div class="modal-header">
+                <h5 class="modal-title">Atenção!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                  style="color:black"></button>
+              </div>
+              <div class="modal-body">
+                <p>Alguns campos do seu formulário não foram preenchidos corretamente!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="modalOKBtn" style="color: red">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seu modal de Sucesso HTML -->
+        <div class="modal modal-backdrop" tabindex="-1" id="modalSucesso">
+          <div class="modal-dialog" style="color: green">
+            <div class="modal-content" style="color: green">
+              <div class="modal-header">
+                <h5 class="modal-title">Sucesso!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                  style="color:black"></button>
+              </div>
+              <div class="modal-body">
+                <p>Formulário enviado com sucesso!</p>
+                <p>Você será redirecionado para a Home em alguns segundos!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="modalOKBtnS" style="color: green">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGEM ILUSTRATIVA -->
     </div>
     <div class="col-sm-5">
       <div class="mt-2">
@@ -114,4 +146,5 @@
     crossorigin="anonymous"></script>
 
 </body>
+
 </html>

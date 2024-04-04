@@ -51,4 +51,17 @@ R: A crise de softwares são a base de:
 
 Um bom software tem que ter tudo isso de forma perfeito.
 
+## 03/04/2024 - Explicação da Prova
+Será modelo Enade - Prova em Dupla
+
+Possíveis perguntas:
+1) Componha o seu processo de desenvolvimento de software (dissertativa)
+2) O que é engenharia de software? (método, processos e ferramentas)
+3) Como gerenciar projetos? (tempo, pessoas, recursos, qual o papel do gerente de projetos?)
+4) O que é um software de qualidade? (nao apresenta erros, atende as expectativas do cliente, rapido)
+5) Requisitos (testes)
+6) Qual é o papel do engenheiro de software no contexto de desenvolvimento? (garantir que o software atenda a necessidade do cliente, melhor preço, menor tempo especificado, sem erro, sem nada, garantindo a qualidade do software, definir os processos, fazer as validações)
+7) O que é UML?
+
+
 
