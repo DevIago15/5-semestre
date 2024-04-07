@@ -239,4 +239,32 @@ G2 = acadac => S 1=> aXYc 1=> aXcc 3=> aXac 2=> acadac
 
 ## 22/03/2024 - Exercícios de Gramáticas
 
+## 05/04/2023
+Automato Finito Determinitisco
+(Maquina de Estado Finito)
+
+São máquinas formadas por um número finito de estados junto a um dispositivo de entrada(fita), que lê, um por um, da esquerda para direita, símbolos da cadeia de entrada.
+
+É inicializado em um estado inicial, é lendo o símbolo mais à esquerda da fita.
+
+Caso a máquina esteja em um estado vazio e o símbolo lido seja x, a máquina se moverá para um certo estado, de acordo com a regra xx, chamada de função de transição.
+
+A máquina para após ler todos os símbolos da cadeia de entrada.
+Exemplo: Suponha que a máquina M tenha 4 estados:
+Q0, Q1, Q2 e Q3, e para as cadeias de entrada sejam formadas pelos símbolos {a, b, c}.
+
+Seja Q0 o estado inicial e que as regras da função de transição sejam:
+
+Alternativamente, tal máquina pode ser representada por diagramas de transição de estados, no qual os estados são representados por círculos. A seta -> aponta para o estado inicial. Os estados finais possuem círculos duplas. As transições são representadas por arcos direcionados:
+QL x -> Qj
+
+Para facilitar a descrição dos movimentos da máquina, introduzimos o conceito de configuração.
+
+A configuração da máquina M é um par[Q0, vazio], em que Q é o estado atual e G = ak ak+1..am é a parte da cadeia da entrada que falta ser llida.
+
+A configuração inicial é
+
+Q0, Q1, Q2, Q3 ->
+INCOMPLETO
+
 
