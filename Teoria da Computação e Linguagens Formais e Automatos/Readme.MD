@@ -268,3 +268,34 @@ Q0, Q1, Q2, Q3 ->
 INCOMPLETO
 
 
+## 10/05/2024
+1 - Construir o diagrama de transição para os AFNDs que aceitam o sigma = {0, 1} e:
+a) cadeias que tenham 01 com sufixo
+b) cadeias que tenham 1 na antepenultima posição
+c) cadeias que tenham dois 0's consecutivos ou dois Ps consecutivos
+d) cadeias que tenham o último simbolo diferente do primeiro
+
+2 - Construir AFNDs para as seguintes linguages:
+a) L1 = {w00 | wEsigma = {0, 1} }
+b) L2 = { x01y | x, y sigma {0, 1} }
+
+3 - Construa um AFND que aceite cadeias sobre sigma = {0, 1, 2, 3, ..., 9} tal que o digito final ja tenha aparecido antes na cadeia.
+
+4 - Seja M um AFND que:
+Q = { q0, q1, q2 }
+sigma = {a, b, c }
+Q0 = { q0 }
+F = { q1, q0 }
+beta = { (q0, a) -> { q1, q2 }
+	(q1, b) -> {q1, q2}
+	(q2, c) -> {q2}
+Qual a L(M)?
+
+5 - Converta o seguinte AFND para um AFD equivalente:
+
+6 - Dada G:
+	S -> A
+	A -> bB | vazio
+	B -> aA
+    
+Construa o diagrama AFND equivalente

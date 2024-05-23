@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Painel Adm";
+    Layout = "_Error";
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .error-container {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        color: #dc3545;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div class="error-container">
+    <img src="~/img/error-404.png" class="img-fluid" style="width: 30%"/>
+    <h1>Erro 404</h1>
+    <p>A página que você está procurando ainda não existe.</p>
+    <a href="/Home/Index" class="btn">Voltar para a página inicial</a>
+</div>

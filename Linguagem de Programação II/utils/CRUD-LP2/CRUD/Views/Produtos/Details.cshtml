@@ -1,0 +1,39 @@
+﻿@model CRUD.Models.Produto
+
+@{
+    ViewData["Title"] = "Detalhes do Produto";
+}
+
+<h1>Detalhes do seu Produto</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nome do Produto
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NomeProduto)
+        </dd>
+
+        <dt class = "col-sm-2">
+            Descrição do Produto
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <div class="btn-group mt-3" role="group" aria-label="">
+        <button onclick="redirecionaListagem()" type="button" class="btn btn-outline-primary">Voltar para a listagem</button>
+    </div>
+</div>

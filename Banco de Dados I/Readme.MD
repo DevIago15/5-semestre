@@ -118,3 +118,38 @@ Possível visualizar em ```/utils/locacao_cco```
 se o item for primária e estrangeira (filha de alguém)
 
 composta -M mais de uma coluna entra na chave
+
+## 07/05/2024
+Segunda prova de banco:
+Diagrama que estará na prova:
+![Estara na prova](image-1.png)
+
+Foi feito uma lista de exercícios (já respondida) que será utilizada para fazer a prova (tudo o que tem lá, terá na prova)
+A lista poderá ser encontrada em ```/utils/enunciados```
+
+Iniciando os primeiros exercícios:
+O seguinte select pega a media com o "AVG", que é uma função do banco de dados que faz a media automaticamente (average):
+```select AVG(apr_nota) Media from aproveitamentos ```
+
+O seguinte select pega a media com o "AVG", que é uma função do banco de dados que faz a media automaticamente (average), utiliza o COUNT com asteriscos para contar as linhas que foram lidas:
+```select AVG(apr_nota) Media, COUNT(*) qtd from aproveitamentos where alu_rm = 1```
+
+O seguinte select pega a media com o "AVG", conta a quantidade de linhas, pega a nota maxima e a nota menor:
+```select AVG(apr_nota) Media, COUNT(*) Qtd, MAX(apr_nota) Maior, MIN(apr_nota) Menor from aproveitamentos where alu_rm = 1```
+
+O seguinte select agrupa os alunos para separar as colunas de cada um:
+```select AVG(apr_nota) Media, COUNT(*) Qtd, MAX(apr_nota) Maior, MIN(apr_nota) Menor from aproveitamentos where alu_rm = 1 OR alu_rm = 4 group by alu_rm```
+
+O seguinte select agrupa os alunos para separar as colunas de cada um (OBS: Só pode incluir no select o que tem dentro do group by)
+```select alu_rm, AVG(apr_nota) Media, COUNT(*) Qtd, MAX(apr_nota) Maior, MIN(apr_nota) Menor from aproveitamentos where alu_rm = 1 OR alu_rm = 4 group by alu_rm``
+
+
+O seguinte select faz as mesmas coisas que o select de cima porém utilizando uma condição com o "HAVING", exibindo somente os alunos com media maior que 7 (OBS: Não pode usar WHERE porque não funciona)
+```select alu_rm RM, AVG(apr_nota) Media, COUNT(*) Qtd, MAX(apr_nota) Maior, MIN(apr_nota) Menor from aproveitamentos group by alu_rm having AVG(apr_nota) > 7```
+
+OBS: Dentro do WHERE nunca deverá ser colocado funções do banco de dados.
+`
+O seguinte select converte as casas decimais:
+```select alu_rm RM, convert(decimal(4,2), AVG(apr_nota)) Media, COUNT(*) Qtd, MAX(apr_nota) Maior, MIN(apr_nota) Menor from aproveitamentos where apr_nota > 3 group by alu_rm having AVG(apr_nota) > 8.25```
+
+```select al.alu_rm, al.alu_nome Nome, convert(decimal(4,2), AVG(apr_nota)) Media, COUNT() Qtd, MAX(apr_nota) Maior, min(apr_nota) Menor from aproveitamentos ap, alunos al where apr_nota > 3 and ap.alu_rm = al.alu_rm group by al.alu_rm, al.alu_nome having AVG(apr_nota) > 8 and count() > 7 order by Media desc```

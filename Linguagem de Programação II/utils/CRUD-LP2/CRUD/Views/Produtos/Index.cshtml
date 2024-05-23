@@ -1,0 +1,54 @@
+﻿@model IEnumerable<CRUD.Models.Produto>
+
+@{
+    ViewData["Title"] = "Listagem de Produtos";
+}
+
+<p>
+    <div class="btn-group" role="group" aria-label="">
+        <button onclick="redirecionaCreate()" type="button" class="btn btn-outline-success">Crie um novo produto</button>
+    </div>
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                Nome do Produto
+            </th>
+
+            <th>
+                Descrição do Produto
+            </th>
+
+            <th>
+                Valor do Produto
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeProduto)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+
+            <td>
+                <a class="btn btn-sm btn-primary" href="/Produtos/Edit/@item.ID">Editar</a>
+                <a class="btn btn-sm btn-info" href="/Produtos/Details/@item.ID">Detalhes</a>
+                <a class="btn btn-sm btn-danger" href="/Produtos/Delete/@item.ID">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<script src="./site.js"></script>

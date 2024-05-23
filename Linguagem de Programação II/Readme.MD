@@ -49,3 +49,6 @@ Será necessário fazer:
 
 usar navbar do bootstrap*
 
+## 06/05/2024 - Iniciando .NET MVC 
+Após criar o projeto foi criado uma migration pelos tools > nugetpackage manager > console > rodar o add-migration initial.
+Esse comando irá criar os parâmetros da criação da migration do BD

@@ -1,0 +1,52 @@
+﻿@model CRUD.Models.Produto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edite seu Produto</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <p style="margin: 0; padding-right: 10px;">Nome do Produto</p>
+                <input asp-for="NomeProduto" class="form-control" />
+                <span asp-validation-for="NomeProduto" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <p style="margin: 0; padding-right: 10px;">Descrição do Produto</p>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <p style="margin: 0; padding-right: 10px;">Valor do Produto</p>
+                <input asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="btn-group mt-3" role="group">
+                    <input type="submit" value="Editar Produto" class="btn btn-outline-success" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="btn-group mt-3" role="group" aria-label="">
+    <button onclick="redirecionaListagem()" type="button" class="btn btn-outline-primary">Voltar para a listagem</button>
+</div>
+
+<div class="d-flex justify-content-end">
+    <img src="/img/pesca-bg.png" style="margin-top: -250px; width:50%;" />
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

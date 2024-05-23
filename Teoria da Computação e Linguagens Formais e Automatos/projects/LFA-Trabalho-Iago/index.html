@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de AFD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simulador de AFD</h1>
+  <div id="input-container">
+    <label for="input-alphabet">Alfabeto:</label>
+    <input type="text" id="input-alphabet" placeholder="Ex: 0,1">
+
+    <br>
+
+    <label for="input-states">Estados:</label>
+    <input type="text" id="input-states" placeholder="Ex: Q0,Q1,Q2">
+
+    <br>
+
+    <label for="input-initial-state">Estado Inicial:</label>
+    <input type="text" id="input-initial-state" placeholder="Ex: Q0">
+    
+    <br>
+
+    <label for="input-final-states">Estados Finais:</label>
+    <input type="text" id="input-final-states" placeholder="Ex: Q2,Q4">
+
+    <br>
+
+    <label for="input-transitions">Função de Transição:</label>
+    <textarea id="input-transitions" rows="5" placeholder="Ex: Q0,0,Q1;Q1,1,Q2;" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+
+    <br>
+
+    <label for="input-string">Cadeia de Entrada:</label>
+    <input type="text" id="input-string" placeholder="Ex: 11010">
+
+    <br>
+
+    <button onclick="simulate()" class="button-simulate">Simular</button>
+    <p id="error-message" class="error-message"></p>
+  </div>
+
+  <div id="output-container">
+    <h2>Passos da Simulação:</h2>
+    <pre id="simulation-steps"></pre>
+
+    <h2>Resultado:</h2>
+    <p id="result"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
