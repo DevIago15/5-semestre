@@ -52,8 +52,5 @@ function simulate() {
     document.getElementById('result').textContent = result;
   }
 
-  // O código captura os valores dos campos de entrada, 
-  // verifica se todos os campos estão preenchidos, processa os valores, simula o autômato passo a passo, 
-  // e finalmente exibe os passos da simulação e o resultado (aceito ou rejeitado) ao usuário. A validação inicial garante que a 
-  // simulação só ocorra se todos os campos estiverem devidamente preenchidos, melhorando a experiência do usuário.
+
   
